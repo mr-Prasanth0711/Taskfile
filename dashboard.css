@@ -83,12 +83,12 @@
     small{
     font-size: 0.76rem;
     }
-    .profile-photo{
+    /* .profile-photo{
     width: 2.8rem;
     height: 2.8rem;
     border-radius: 50%;
     overflow: hidden;
-    }
+    } */
     .text-muted{
     color: var(--color-info-dark);
     }
@@ -180,4 +180,21 @@
     margin-top: 20px;
     margin-left: 110px;
     }
-    
+    .imary{
+        background-color: #7380ec;
+        width: 60px;
+        border-radius: 5px;
+    }
+    .dimary{
+        background-color: #e9331b;
+        width: 60px;
+        border-radius: 5px;
+    }
+    table {
+        width: 100%;
+        border: 2px solid black;
+      }
+      
+      th {
+        height: 70px;
+      }

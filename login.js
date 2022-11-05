@@ -31,9 +31,10 @@ function validate() {
 
             }
             if (entername === arr[a].name && enterPass === arr[a].Password) {
-                window.location.href = "dashboard.html";
-                sessionStorage.setItem("user", entername);
-            }
+               window.location.href="dashboard.html";
+
+                
         }
+    }
     }
 }
