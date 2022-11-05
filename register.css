@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(98, 156, 176);
+    }
+    
+    .Heading {
+    text-align: center;
+    color: rgb(197, 143, 93);
+    }
+    
+    .form {
+    padding: 2%;
+    width: 400px;
+    margin-left: 32%;
+    border-radius: 15px;
+    background-color: aliceblue;
+    }
+    .button{
+    text-align: center;
+    }
+    p{
+    color: red;
+    }
+    .container{
+    border-radius: 15px;
+    margin-top: 60px;
+    }
+    .create_link{
+    margin-top: 10px;
+    margin-left: 65px;
+    }
+    
+    

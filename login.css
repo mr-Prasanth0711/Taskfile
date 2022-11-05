@@ -1,0 +1,65 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background: rgb(123, 180, 227);
+    font-family: sans-serif,'Times New Roman', Times, serif;
+    height: 100vh;
+    overflow: hidden;
+    }
+    .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+    width: 400px;
+    border-radius: 10px;
+    }
+    .center h1{
+    text-align: center;
+    padding: 0 0 15px 0;
+    margin-top: 20px;
+    color: rgb(87, 135, 172);
+    border-bottom: 3px solid rgb(142, 191, 202);
+    }
+    
+    #user,#pass{
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 30px;
+    height: 30px;
+    border: none;
+    size: 16px;
+    background: transparent;
+    border-bottom: 1px solid rgb(117, 183, 215);
+    }
+    .text{
+    margin-left: 30px;
+    font-size: 16px;
+    padding-top: 20px;
+    color: rgb(89, 72, 202);
+    font-weight: bold;
+    }
+    .forgot{
+    float: right;
+    margin-top: 10px;
+    padding-right: 60px;
+    }
+    .btn{
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    background: rgb(119, 194, 214);
+    margin-top: 30px;
+    margin-left: 120px;
+    }
+    .register_link{
+    margin-top: 10px;
+    margin-left: 75px;
+    }
+    .btn:hover{
+    cursor: pointer;
+    background-color: rgb(88, 155, 145);
+    }
+    
+    

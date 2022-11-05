@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="login.css">
+<title>login</title>
+</head>
+
+<body>
+<div class="center">
+<h1>Login</h1>
+<form name="RegForm" onsubmit="return validate()" method="post">
+<div class="text-field">
+<label for="username" class="text">Username:</label><br>
+<input type="text" placeholder="username" name="username" id="user" required>
+<p id="err_name"></p>
+</div>
+<div class="text-field">
+<label for="password" class="text">Password:</label><br>
+<input type="password" placeholder="password" name="password" id="pass" required>
+<p id="err_passs"></p>
+<p id="cr_err"></p>
+
+</div>
+<div class="forgot">
+<a href="#">Forgot Password?</a>
+</div>
+<button type="button" value="Login" class="btn" onclick="validate()">Login</button>
+<div class="register_link">Don't have an Account?<a href="register.html">Register.</a></div>
+</form>
+
+</div>
+<script src="login.js"></script>
+</body>
+
+</html>
+
