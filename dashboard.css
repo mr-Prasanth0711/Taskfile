@@ -152,24 +152,29 @@
     .emailsearch input{
     width: 300px;
     height: 40px;
+
     border-radius: 15px;
     
     }
     .numbersearch input{
     width: 300px;
     height: 40px;
+    position: relative;
+    
     border-radius: 15px;
     
     }
     .usersearch input{
     width: 300px;
+    
     height: 40px;
     border-radius: 15px;
     
     }
     .detail{
     position: relative;
-    left: 350px;
+    left: 100px;
+    flex-direction: row;
     top: 50px;
     }
     .srcbtn input{
@@ -178,23 +183,36 @@
     background-color: #96e2f5;
     border-radius: 10px;
     margin-top: 20px;
-    margin-left: 110px;
+    margin-left: 80px;
     }
     .imary{
         background-color: #7380ec;
         width: 60px;
+        height: 20px;
+        margin-left: 50px;
         border-radius: 5px;
     }
     .dimary{
         background-color: #e9331b;
         width: 60px;
+        height: 20px;
         border-radius: 5px;
     }
     table {
+
         width: 100%;
         border: 2px solid black;
       }
       
       th {
-        height: 70px;
+        height: 40px;
+        border:2px solid black ;
+      }
+      td {
+        height: 30px;
+        border:2px solid black ;
+      }
+      label{
+        color: #ad2d38;
+        font-size: 16px;
       }

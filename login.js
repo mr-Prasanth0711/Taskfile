@@ -31,6 +31,7 @@ function validate() {
 
             }
             if (entername === arr[a].name && enterPass === arr[a].Password) {
+                alert("Login Success")
                window.location.href="dashboard.html";
 
                 

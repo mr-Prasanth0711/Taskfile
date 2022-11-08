@@ -96,7 +96,7 @@ function validate() {
     
     }
     alert("Registration Success");
-    window.location.href="register.html";
+    window.location.href="login.html";
     
     }
 }
