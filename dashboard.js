@@ -23,18 +23,48 @@ function dele(r) {
     localStorage.setItem("User Details", JSON.stringify(arr));
 
 }
-function edit(e) {
-    var edit = e.parentNode.parentNode.rowIndex;
-    console.log(edit);
-
-    var uname = document.getElementById('usertable').rows[e].cells[2].innerHTML;
-    var email = document.getElementById('usertable').rows[e].cells[3].innerHTML;
-    var number= document.getElementById("usertable").rows[e].cell[4].innerHTML;
-    id = document.getElementById('usertable').rows[e].cells[0].innerHTML;
-
-    document.getElementById('searchnum').value = uname;
-    document.getElementById('searchmail').value = email;
-    document.getElementById("searchnum").value=number;
+edit = (t) => {
+   
+    
+    rowindex = t.parentNode.parentNode.rowIndex;
+    
+    selectedrow = (t.parentNode.parentNode.rowIndex) - 1;
+    document.getElementById("email").value = array[selectedrow].email;
+    document.getElementById("uname").value = array[selectedrow].username;
+    document.getElementById("phoneNo").value = array[selectedrow].mobile;
+    
+    }
+    
+    
     
 
-}
+    upDate = () => {
+    var a = 0;
+    array = JSON.parse(localStorage.getItem("data"));
+    var email = document.getElementById("email").value.trim();
+    var username = document.getElementById("uname").value.trim();
+    var mobile = document.getElementById("phoneNo").value.trim();
+    
+    array.forEach(element => {
+    if (a === selectedrow) {
+    element.email = email;
+    element.username = username;
+    element.mobile = mobile;
+    var change = document.getElementById("table").rows[rowindex].cells;
+    change[0].innerHTML = element.email;
+    
+    change[1].innerHTML = element.username;
+    change[2].innerHTML = element.mobile;
+    localStorage.setItem("data", JSON.stringify(array));
+    alert("Updated")
+    document.getElementById("tbody").style.visibility = "visible";
+    
+    }
+    a++;
+    });
+    
+    document.getElementById("action").style.display = "none";
+    //document.getElementById("table").style.visibility = "visible";
+    
+    }
+    
